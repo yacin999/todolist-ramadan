@@ -1,0 +1,322 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFF;
+}
+
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+/* =================================================== */
+
+
+nav.navbar {
+    width: 95vw;
+    background-color: #023257;
+    border-radius: 35px;
+    margin: 10px auto;
+    box-shadow: 2px 5px 10px #333;
+}
+
+
+.navbar .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding: 10px 0;
+}
+
+.navbar .logo > img {
+    width: 50px;
+    position: absolute;
+    top: -6px;
+}
+
+.navbar .logo > span {
+   color: #FFF;
+   font-weight: bold;
+   font-size: 8px;
+}
+
+.navbar .logo > span:first-of-type {
+    margin-top: 26px;
+}
+
+
+.navbar .container .nav-list {
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+
+.navbar .container .nav-list > li {
+    padding: 10px 0;
+    border-bottom: 2px solid transparent;
+}
+
+
+.navbar .container .nav-list, 
+.navbar .container .nav-list > li > a{
+    color: #FFF;
+    font-weight: bold;
+}
+
+.navbar .container .nav-list > li:hover {
+    border-bottom: 2px solid #fff;
+}
+
+
+
+/* =============================== STYLING home page ===================================== */
+
+.home-container {
+    width: 90vw;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-container .left > img {
+   width: 50px;
+}
+
+.home-container .left h1 {
+    margin-bottom: 20px;
+    color: #005468;
+}
+
+
+.home-container .left p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    line-height: 1.4;
+}
+
+.home-container .left a {
+    padding: 10px 10px;
+    background-color: #F00;
+    color: #fff;
+    font-weight: bold;
+    font-size: 17px;
+    border: none;
+    border-radius: 40px;
+}
+
+.home-container .left a:hover {
+    background-color: #fcbc05;
+    transition: 0.1s ease-in;
+}
+
+/* ================================ STYING Todos page ==================================== */
+
+.todo-container {
+    background-color: #f7f7fd;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px 40px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 10px #333;
+}
+
+.todo-container .form-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-container .form-header img {
+    width: 70px;
+    margin-right: 10px;
+}
+
+
+.todo-container .form-header h4 {
+    color: #027B02;
+    font-size: 20px;
+}
+
+.todo-container > form {
+    width: 100%;
+}
+
+.todo-container form  {
+    width: 100%;
+    display: flex;
+}
+
+
+.todo-container form > .todo-input {
+    flex: 2 0;
+    padding: 0 10px;
+    font-size: 17px;
+}
+
+.todo-container form > input[type="submit"] {
+    flex-basis: 70px;
+    background-color: #00F;
+    color: #fff;
+    padding: 10px 5px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+.todo-container .todos-list {
+    margin-top: 30px;
+}
+
+
+.todo-container .todos-list > li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #333;
+    padding: 20px 0 10px 0;
+    color: #333;
+}
+
+.todo-container .todos-list > li > p {
+    max-width: 75%;
+    
+}
+
+
+.todo-container .todos-list > li > p.completed {
+    text-decoration: line-through;
+}
+
+.todo-container .todos-list > li a {
+   padding: 5px 5px;
+   color: #FFF;
+   border-radius: 40px;
+   font-weight: bold;
+}
+
+.todo-container .todos-list > li .delete-btn {
+    background-color: #F00;
+}
+
+.todo-container .todos-list > li .update-btn {
+    background-color: #027B02;;
+}
+
+/* ========================= Update todo page ============================== */
+
+
+.update-form {
+    background-color: #fff;
+    width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 4px 3px 10px #ccc;
+}
+
+
+.update-form p {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #00F;
+}
+
+
+.update-form .todo-input {
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+
+.update-form input[name="completed"] {
+    margin-left: 10px;
+}
+
+
+.update-form input[type="submit"] {
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: #027B02;
+    color: #FFF;
+    cursor: pointer;
+}
+
+
+/* ============================ about us page ==================================== */
+
+.body {
+    background-color: #fff;
+}
+
+.about-container {
+    width: 90vw;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+}
+
+
+.about-container .left > h4{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    color: #0c3350;
+}
+
+.about-container .left > p{
+    font-size: 20px;
+    color: rgb(46, 46, 46);
+    margin-bottom: 30px;
+}
+
+
+.about-container .left > button {
+    border: none;
+    outline: none;
+    padding:  10px;
+    background-color: #fcbc05;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    text-transform: uppercase;
+    box-shadow: 1px 2px 2px #ccc;
+}
+
+
+.about-container .right > img {
+    width: 600px;
+}

@@ -1,0 +1,33 @@
+
+{% extends "todo/base.html" %}
+{% load static %}
+
+
+
+
+{% block content %}
+
+  <!-- <main>
+    <div class="logo">
+      <img src="{% static 'todo/images/gdg.png' %}" alt="">
+    </div>
+    <h1>welcome guys to our website</h1>
+    <p>press the button bellow to create your TODOS</p>
+    <a href="{% url 'all_todos' %}">set your day </a>
+  </main>
+ -->
+
+  <div class="home-container">
+    <div class="left">
+      <h1>Improve your day</h1>
+      <!-- <p>Create your own todo lists and make your future better</p> -->
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, fugit! Atque quae est corrupti doloremque rem perferendis ab veniam. Sint quasi nisi quibusdam beatae consectetur ipsa. Ipsam ad quidem enim!</p>
+      <a href="{% url 'all_todos' %}">Start todo </a>
+    </div>
+    <div class="right">
+      <img src="{% static 'todo/images/home.jpg' %}" alt="">
+    </div>
+  </div>
+
+  
+{% endblock content %}

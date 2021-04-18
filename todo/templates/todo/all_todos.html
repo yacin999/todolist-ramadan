@@ -1,0 +1,46 @@
+{% extends "todo/base.html" %}
+{% load static %}
+
+
+
+{% block content %}
+  
+
+  <div class="todo-container">
+    <div class="form-header">
+      <img src="{% static 'todo/images/gdg.png' %}"  alt="">
+      <h4>todo list for Ramadan</h4>
+    </div>
+    <form method="POST">
+        {% csrf_token %}
+      {{form}}
+
+      <input type="submit" value="Submit">
+
+
+    </form>
+
+    <ul class="todos-list">
+
+      {% for todo in todos %}
+        <li>
+          {% if todo.completed == True %}
+            <p class="completed">{{todo.content}} </p>
+          {% else %}
+            <p >{{todo.content}} </p>
+          {% endif %}
+          
+          
+          <div class="btns">
+            <a href="{% url 'delete_item' todo.id %}" class="delete-btn">delete</a> 
+            <a href="{% url 'update_item' todo.id %}" class="update-btn">update</a>
+          </div>
+        </li>
+      
+      {% endfor %}
+
+    </ul>
+  </div>
+
+  
+{% endblock content %}

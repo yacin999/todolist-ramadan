@@ -1,0 +1,48 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'todo/css/main.css' %}">
+    <title>{{title}}</title>
+</head>
+
+
+{% if title == "about us" %}
+    <body class="body"> 
+{% else %}
+    <body> 
+{% endif %}
+
+
+    <nav class="navbar">
+
+        <div class="container">
+
+            <div class="logo">
+                <img src="{% static 'todo/images/gdg.png' %}" alt="no image">
+                <span>GDG</span>
+                <span>Grand MASCARA</span>
+            </div>
+
+            <ul class="nav-list">
+                <li><a href="{% url 'home' %}">Home</a></li>   
+                <li><a href="{% url 'all_todos' %}">Todos</a></li>  
+                <li><a href="{% url 'about_us' %}">About Us</a></li>
+            </ul>
+
+        </div>
+
+    </nav>
+
+
+    {% block content %}
+      
+    {% endblock content %}
+
+
+</body>
+</html>
