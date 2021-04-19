@@ -68,7 +68,7 @@ def update_item(request, id):
 
     context = {
         'form' : todo_form,
-        'title' : 'update tasks'
+        'title' : 'update task'
     }
   
     return render(request, 'todo/update_item.html', context)
