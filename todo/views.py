@@ -29,7 +29,8 @@ def list_todos(request):
 
     context = {
         'form' : form,
-        'todos' : todos
+        'todos' : todos,
+        'title' : 'todos'
     }
 
     return render(request, 'todo/all_todos.html', context)
@@ -66,7 +67,8 @@ def update_item(request, id):
         todo_form = TodoUpdateForm(instance=todo_item)
 
     context = {
-        'form' : todo_form
+        'form' : todo_form,
+        'title' : 'update tasks'
     }
   
     return render(request, 'todo/update_item.html', context)
