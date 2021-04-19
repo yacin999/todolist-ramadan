@@ -95,14 +95,12 @@ nav.navbar {
 
 .home-container {
     width: 90vw;
-    margin: 30px auto;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+    margin-top: 7%;
 
-.home-container .left > img {
-   width: 50px;
 }
 
 .home-container .left h1 {
@@ -112,9 +110,10 @@ nav.navbar {
 
 
 .home-container .left p {
-    font-size: 20px;
+    font-size: 17px;
     margin-bottom: 40px;
     line-height: 1.4;
+    max-width: 550px;
 }
 
 .home-container .left a {
@@ -130,6 +129,11 @@ nav.navbar {
 .home-container .left a:hover {
     background-color: #fcbc05;
     transition: 0.1s ease-in;
+}
+
+
+.home-container .right > img {
+    width: 480px;
 }
 
 /* ================================ STYING Todos page ==================================== */
@@ -298,9 +302,11 @@ nav.navbar {
 }
 
 .about-container .left > p{
-    font-size: 20px;
+    font-size: 17px;
     color: rgb(46, 46, 46);
     margin-bottom: 30px;
+    line-height: 1.5;
+    max-width: 80%;
 }
 
 
